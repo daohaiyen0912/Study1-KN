@@ -1,0 +1,9 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(213, 212, 215);
+}
+
+button:hover {
+    cursor: pointer;
+}

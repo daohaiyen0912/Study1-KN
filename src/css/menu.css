@@ -1,0 +1,30 @@
+.menu {
+    background-color: rgb(87, 25, 255);
+    color: white;
+}
+.main-menu ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.main-menu ul li {
+    list-style-type: none;
+    margin: auto 5px;
+}
+
+/*Nút down - drop menu*/
+.fa-chevron-down {
+    font-size: 10px;
+}
+
+/*Phần menu bên phải*/
+.menu-right {
+    margin: auto 0;
+}
+.btn-menu {
+    background-color: rgb(87, 25, 255);
+    border: none;
+    
+    font-size: 15px;
+
+    color: white;
+}
