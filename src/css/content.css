@@ -41,7 +41,7 @@
 .btn-them-moi {
     height: 100%;
 
-    background-color: rgb(87, 25, 255);
+    background-color: #0f62fe;
 }
 .btn-them-moi p {
     margin: auto;
@@ -77,6 +77,12 @@
     color: gray;
     font-size: 10px;    
 }
+/*Mã sản phẩm check*/
+.checkMSP {
+    border-radius: 0px;
+}
+
+/*xem xóa sửa*/
 .r-m-d {
     font-size: 10px;
 }
@@ -120,4 +126,20 @@
 }
 
 .show {display: block;}
+
+/*Footer*/
+.footer-table-left, .footer-table-right {
+    display: flex;
+}
+
+.footer-table-left p, .footer-table-right p {
+    margin-left: 25px;
+}
+
+.footer-table-right button {
+    background-color: white;
+    border: none;
+
+    margin-left: 25px;
+}
 

@@ -61,10 +61,18 @@ var trhead = document.createElement("tr");
 //tạo các cột title
 for(let i=0; i<4; i++) {
     var newTh = document.createElement("th");
-    newTh.innerHTML = titleTB[i];
+    if(i==0) { 
+        newTh.innerHTML = "<input type=\"checkbox\" onclick=\"checkAllMsp()\" id=\"allCheck\"}>Mã sản phẩm</input>";
+    }
+    else{
+        newTh.innerHTML = titleTB[i];
+    }   
+    
     trhead.appendChild(newTh);
 }
 //console.log(trhead);
+
+var msp = [];
 
 //phần dữ liệu tbody
 var tbody = document.createElement("tbody");
@@ -73,7 +81,20 @@ for(let i=0; i<data.length; i++) {
     for(let j=0; j<4; j++) {
         var td = document.createElement("td");
         if(j == 0) {
-            td.innerHTML = data[i].masp;
+            // var input = document.createElement("input");
+            // input.type = "checkbox";
+            // input.id= "check-" + data[i].masp;
+            // input.innerHTML = data[i].masp;
+            // console.log(input);
+            td.innerHTML = "<input type=\"checkbox\" onclick=\"check()\" class=\"checkMSP\" id = \"check-" +
+                            data[i].masp +                             
+                            "\">"   +
+                            data[i].masp    +
+                            "</input>";
+            msp.push(td.innerHTML);
+
+            //console.log(td.innerHTML);
+            //td.innerHTML = data[i].masp;
         } else if(j == 1) {
             td.innerHTML = data[i].tensp;
         } else if(j == 2){
@@ -92,13 +113,13 @@ for(let i=0; i<data.length; i++) {
 
             button.innerHTML = "<i class=\"fa-solid fa-ellipsis-vertical\"></i>";
 
-            console.log(button);
+            //console.log(button);
 
             td.appendChild(button);
 
             td.className = "r-m-d";
             td.id = "rmd-" + data[i].masp;
-            console.log(td);
+            //console.log(td);
         }
         tr.appendChild(td);
     }
@@ -114,5 +135,6 @@ table.appendChild(thead);
 table.appendChild(tbody);
 
 tableTT[0].appendChild(table);
+console.log(msp);
 console.log(tableTT[0]);
 

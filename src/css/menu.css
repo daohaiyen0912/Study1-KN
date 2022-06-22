@@ -1,5 +1,5 @@
 .menu {
-    background-color: rgb(87, 25, 255);
+    background-color: #0f62fe;
     color: white;
 }
 .main-menu ul {
@@ -8,7 +8,7 @@
 }
 .main-menu ul li {
     list-style-type: none;
-    margin: auto 5px;
+    margin: auto 25px;
 }
 
 /*Nút down - drop menu*/
@@ -18,13 +18,15 @@
 
 /*Phần menu bên phải*/
 .menu-right {
-    margin: auto 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .btn-menu {
-    background-color: rgb(87, 25, 255);
+    background-color: #0f62fe;
     border: none;
     
     font-size: 15px;
+    margin-left: 15px;
 
     color: white;
 }
